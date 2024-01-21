@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "23b6e15c-4f22-4055-a174-2e034bef47",
+		"name": "movie-lobby",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "149724"
+	},
+	"item": [
+		{
+			"name": "crud",
+			"item": [
+				{
+					"name": "Get All Movies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/movies",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"movies"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Mission",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Movie",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Mission Impossible 5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/search?title=Dunki",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"search"
+							],
+							"query": [
+								{
+									"key": "title",
+									"value": "Dunki"
+								},
+								{
+									"key": "genre",
+									"value": "Action",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Movie",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "role",
+								"value": "Admin",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Mission Impossible 2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/movie/65ac8aad86bd6d6c9bcd0e9d"
+					},
+					"response": []
+				},
+				{
+					"name": "Update Movie",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Dunki updated\"\r\n \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/movie/65ac8aad86bd6d6c9bcd0e9d"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Dunki\",\r\n    \"genre\": [  \"Thriller\"],\r\n    \"rating\" : \"8\",\r\n    \"streamingLink\": \"netflix\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}/movies"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

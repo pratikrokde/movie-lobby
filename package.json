@@ -1,0 +1,45 @@
+{
+  "name": "movie-lobby",
+  "version": "1.0.0",
+  "description": "Creating an movie lobby application to perform crud operations",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --pretty --transpile-only src/index.ts",
+    "lint": "eslint src/*.ts",
+    "test": "jest"
+  },
+  "author": "Pratik Rokde",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "http-status": "^1.7.3",
+    "mongoose": "^8.1.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-typescript": "^7.23.3",
+    "@jest/globals": "^29.7.0",
+    "@types/cors": "^2.8.17",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.21",
+    "@types/helmet": "^4.0.0",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.11.5",
+    "@types/supertest": "^6.0.2",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.4",
+    "ts-jest": "^29.1.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  }
+}
