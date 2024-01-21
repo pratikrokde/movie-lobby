@@ -42,9 +42,10 @@ npm install
 npm run dev
 ```
 
-### import postman collection
-### Run create api to crete collection
-### Then proceed with find / update / delete / search api
+### next steps 
+- import postman collection
+- Run create api to crete collection
+- Then proceed with find / update / delete / search api
 
 
 ### To test api's
