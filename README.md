@@ -4,20 +4,20 @@
 
 This is a nodejs crud application where you can create, update, delete or search for any movies
 
-### Features 🔐:
+### Features:
 
 - Create / Update / Delete Movies
 - Search for any movie by title or genre
 - get list of all movies 
 
-### Technologies 💻:
+### Technologies:
 
 - NodeJS
 - ExpressJS
 - MongoDB
 - Typescript
 
-# Quick Start 🚀
+# Quick Start
 
 - You should login to MongoDB with your credentials then create database in Mongodb after that click on connect and take connection url (from MongoDB for vs tab) then proceed further 
 
